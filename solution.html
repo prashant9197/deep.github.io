@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Deepiotics | Solution</title>
+	<link href="index.css" rel="stylesheet" />
+	<link href="solution.css" rel="stylesheet" />
+	<link href="services.css" rel="stylesheet" />
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&amp;display=swap" rel="stylesheet" />
+</head>
+<body>
+<header><!--Nav Bar Starts--><!--Nav For Mobile Starts-->
+<nav class="navMobile">
+<div class="nav-links" id="mob-menu" style="z-index: 1000;">
+<div class="logo-container" style="width: 100%;"><a href="index.php"><img alt="" class="logo-container-img-nav" src="logo.png" /></a></div>
+
+<div class="aboutusM"><a class="nav-link" href="aboutus.html">About Us</a></div>
+
+<div class="servicesM"><a class="nav-link" href="services.html">Services</a></div>
+
+<div class="soultionM"><a class="nav-link" href="solution.html">Solution</a></div>
+
+<div class="contactM"><a class="nav-link" href="contact.php">Contact Us</a></div>
+
+<div class="blogM"><a class="nav-link" href="http://www.deepiotics.com/blog/">Blog</a></div>
+</div>
+
+<div class="nav">
+<div class="logo" id="logo-container logo-container-mobile"><a href="index.php"><img alt="logo" class="logo-container-image-mobile" id="logo-image-mobile" src="logo.png" style="width: 125px; opacity: 1;" /></a></div>
+
+<div class="burger">
+<div class="line1"></div>
+
+<div class="line2"></div>
+
+<div class="line3"></div>
+</div>
+</div>
+</nav>
+<!--Nav For Mobile Ends-->
+
+<div class="navWrapper">
+<ul class="mainList">
+	<li><a href="index.php"><img alt="logo" id="logo-image" src="logo.png" style="width: 125px; opacity: 1;" /></a></li>
+	<li class="about" style="grid-area: about;"><a href="aboutus.html">About Us</a></li>
+	<li class="navServices" style="grid-area: services;"><a href="services.html">Services</a>
+	<ul class="subListServices">
+		<li class="aiesd"><img alt="" src="icons/aiLogo.svg" /> <a href="ai.html">Artificial Intelligence</a></li>
+		<li class="aiod"><img alt="" src="icons/machine-learning.svg" /> <a href="ml.html">Machine Learning</a></li>
+		<li class="nlp"><img alt="" src="icons/vision.svg" /> <a href="vision.html">Computer Vision</a></li>
+		<li class="ml"><img alt="" src="icons/iotLogo.svg" /> <a href="iot.html">Internet of things</a></li>
+		<li class="speech"><img alt="" src="icons/search.svg" /> <a href="research.html">Research &amp; Development</a></li>
+		<li class="aic"><img alt="" src="icons/information.svg" /> <a href="testing.html">QA &amp; Testing</a></li>
+	</ul>
+	</li>
+	<li class="solution" style="grid-area: solution;"><a href="solution.html">Solution</a></li>
+	<li class="case" style="grid-area: case;"><a href="contact.php">Contact Us</a></li>
+	<li class="blog" style="grid-area: blog;"><a href="http://www.deepiotics.com/blog/">Blog</a></li>
+</ul>
+</div>
+<!--Nav Bar Ends--></header>
+<script type="text/JavaScript">
+                     const navSlide = () => {
+             const burger = document.querySelector('.burger');
+             const nav = document.querySelector('.nav-links');
+             const navLinks = document.querySelectorAll('.nav-link');
+
+
+             burger.addEventListener('click', () =>{
+                 nav.classList.toggle('nav-active');
+
+                 navLinks.forEach((link, index) => {
+                     if(link.style.animation){
+                         link.style.animation = ``;
+                     }
+                     else{
+                         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`;
+                     }
+                 });
+                 burger.classList.toggle('toggle');
+             });
+
+             }
+      navSlide();
+    </script>
+
+<section class="automated">
+	<div class="container-fluid">
+		<div class="covid">
+			<div class="upper">
+					<h1>Covid<span style="color:red">X</span>Trail</h1>
+					<h3 class="lead" style="color:red;"><strong>Corona Detection from CXR</strong></h3>
+					<p class="lead" >CovidXTrail analyses chest X-rays in minutes and assist healthcare professionals in detecting signs of Covid-19</p>
+					<p class="lead">Augmenting Radiologists diagnostic ability using Artificial Intelligence for Chest Xray Analysis.
+					</p>
+					<p class="lead">The AI solution is trained with thousands of  X-rays verified by Radiologists and hence provide better accuracy which lead to increasing the productivity of radiologists by automating time-consuming and low cognitive value tasks.
+					</p>
+			</div>
+			<div class="img__wrap">
+				<img class="covid__img" src="src/Picture2.png"/>
+			</div>
+		</div>
+		<div class="covidconatiner">
+			<div class="covidicon">
+				<div class="firstrow">
+				<div class="MID"><img alt="MID" src="src/MID.png"style="height:80px;width:77px;"/></div>
+				<h6>Medical Imaging Data</h6>
+				<p>Partnered with Hospitals, world renowned academic and private clinics to get the data we need.</p>
+				</div>
+			</div>
+			<div class="covidicon">
+				<div class="firstrow">
+				<div class="RE"><img alt="MID" src="src/RE.png" style="height:80px;width:80px;"/></div>
+				<h6>Radiology Expertise</h6>
+				<p>Our team has experienced Radiologists to evaluate and validate data and findings.</p>
+				</div>
+			</div>
+			<div class="covidicon">
+				<div class="firstrow">
+				<div class="AIExperts"><img alt="AI" src="src/AIExperts.jpg"style="height:80px;width:95px;" /></div>
+				<h6>AI Experts</h6>
+				<p>We design custom AI algorithms to achieve higher accuracy and use state-of-the-art technologies</p>
+				</div>
+			</div>
+			<div class="mybutton">
+				<div class="schedule-call"><!--Schedule--><a class="btn btn-primary btn-link mt-3" href="#">Schedule a Call</a> <!--Schedule--></div>
+			</div>
+		</div>
+		
+	</div>
+	
+</section>
+
+<section class="npr">
+<div class="npr-heading">
+<h1>Automated Number Plate Recognition</h1>
+
+<div class="underline automated-underline"></div>
+</div>
+
+<div class="npr-container">
+<div class="npr-image-container"><img alt="NPR" src="src/npr.png" /></div>
+
+<div class="description-right">
+<div class="npr-image-container-mobile"><img alt="NPR" src="src/npr.png" /></div>
+
+<div class="upper-text">
+<h4>Add intelligence to any IP Camera using</h4>
+
+<h4><span style="color: #f7696a;">Deepiotic&#39;s unique Automated Licence Plate Recognizer </span></h4>
+
+<p>Add intelligence to any IP Camera using Deepiotic&#39;s unique Automated Licence Plate Recognizer Cost Effective, Fast and Reliable solution for your Home, Office and Industries.</p>
+
+<div class="icons-container">
+<div class="first-row">
+<div class="introduction_4"><img alt="Introduction_4" src="src/Introduction_4.png" />
+<p>Works with Blurry Images</p>
+</div>
+
+<div class="introduction_5"><img alt="Introduction_5" src="src/Introduction_5.png" />
+<p>Check In and Out of Vehicles</p>
+</div>
+
+<div class="introduction_6"><img alt="Introduction_6" src="src/Introduction_6.png" />
+<p>Track Vehicle Movement</p>
+</div>
+</div>
+
+<div class="second-row">
+<div class="CoDeveloped"><img alt="CoDeveloped" src="src/CoDeveloped.png" />
+<p>Custom Dashboarding for easy tracking</p>
+</div>
+
+<div class="award"><img alt="Award" src="src/Award.png" />
+<p>Integrate with existing applications</p>
+</div>
+
+<div class="award"><img alt="Award" src="src/Award.png" />
+<p>Available at very competitive rate</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="schedule-call"><!--Schedule--><a class="btn btn-primary btn-link mt-3" href="contact.php">Schedule a Call</a> <!--Schedule--></div>
+</section>
+
+
+<section class="cai">
+<div class="cai-heading">
+<h1>Conversational AI</h1>
+
+<div class="underline automated-underline"></div>
+</div>
+
+<div class="cai-container">
+<div class="cai-image-container"><img alt="VoiceAI" src="src/VoiceAI.JPG" /></div>
+
+<div class="description-right">
+<div class="cai-image-container-mobile"><img alt="VoiceAI" src="src/VoiceAI.JPG" /></div>
+
+<div class="upper-text">
+<h4>We are shaping the future of customer engagement - today.</h4>
+
+<h4><span style="color: #f7696a;">Empower Your Business with VOICE </span></h4>
+
+<p>Let AI take care of Interviews, Assesments, Onboarding, Form Filling Embrace Voice Now !.</p>
+
+<div class="icons-container">
+<div class="first-row">
+<div class="introduction_4"><img alt="Introduction_4" src="src/Introduction_4.png" />
+<p><b>Reduce costs</b><br />
+Increases operational efficiency by improving agent utilization, reduce manual work</p>
+</div>
+
+<div class="introduction_5"><img alt="Introduction_5" src="src/Introduction_5.png" />
+<p><b>Understand Emotions</b><br />
+We develop AI Agents that have sense of context, emotions, and sentiments to provide an intelligent human-like, conversational response.</p>
+</div>
+
+<div class="introduction_6"><img alt="Introduction_6" src="src/Introduction_6.png" />
+<p><b>Intelligent Bots </b><br />
+Synonymous phrases and &ldquo;intent are taken care&rdquo;</p>
+</div>
+</div>
+
+<div class="second-row">
+<div class="CoDeveloped"><img alt="CoDeveloped" src="src/CoDeveloped.png" />
+<p><b>Integrate Business Logic</b><br />
+Seamlessly integrate your business logic.</p>
+</div>
+
+<div class="award"><img alt="Award" src="src/Award.png" />
+<p><b>Dashboarding </b><br />
+Save all conversation in database, and get reporting</p>
+</div>
+
+<div class="award"><img alt="Award" src="src/Award.png" />
+<p>Experts that works with your team</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="schedule-call"><!--Schedule--><a class="btn btn-primary btn-link mt-3" href="contact.php">Schedule a Call</a> <!--Schedule--></div>
+</section>
+
+<section class="testimonials"><!--Testimonials-->
+<div class="container">
+<div class="row">
+<div class="col-12">
+<p></p>
+
+<h2 class="text-center" style="color: #3c3c3b;">Our Clients Speaks</h2>
+
+<p></p>
+</div>
+
+<div class="col-md-3">
+<h3 style="color: Green;"><span style="color:#000000;">Machine Vision Problems</span></h3>
+
+<p></p>
+
+<p>I recommend them highly for any sophisticated <b>image analysis or machine vision</b> tasks.</p>
+
+<p>Implemented Retrographic sensing for the measurement of surface texture and shape.</p>
+
+<p style="color: #838383;"><i>Mr. Ashok Yadav,<br />
+CEO,&nbsp;<b>Biddano</b></i></p>
+
+<p></p>
+</div>
+
+<div class="col-md-3">
+<h3>AI based tool for<br />
+<strong>Medical Imaging</strong></h3>
+
+<p></p>
+
+<p>The team is professional and are expert with AI technologies.Within short span they developed AI model for us which is working very well. We are now&nbsp;working with the team again on projects requiring vision expertise.</p>
+
+<p>Deepiotics team built us a phenomenally <b>effective</b> disease detection&nbsp;<b>system using X-ray</b>, tuned to the corpus of images.</p>
+
+<p style="color: #838383;"></p>
+
+<p style="color: #838383;"><br />
+<i>Kishore Shah,<br />
+CEO SPOCHUB<br />
+ESDS Software Solutions</i></p>
+
+<p></p>
+</div>
+
+<div class="col-md-3">
+<h3>Interactive Voice Based Assessment System</h3>
+
+<p>The team did an excellent job working on our projects. Great NLP developers with hard working and self-motivated team. I hope to work with them on future projects.</p>
+
+<p>Project was set up to build a <b>proof of concept</b> for computer vision. Based on the results, we started a larger project.</p>
+
+<p style="color: #838383;"><br />
+<br />
+<br />
+<i><b>NDA Signed<br />
+US Based Client</b></i></p>
+
+<p></p>
+</div>
+
+<div class="col-md-3">
+<h3>Great ML developer company</h3>
+
+<p><br />
+We partnered Deepiotics for developing <strong>Prediction algorithm</strong> for very large data set generated from iOT sensors placed in Cars. The team did an excellent job developing the model. We were <b>pleased by a hard-working and self-motivated team</b>. We felt they were really committed to our project. I hope to work with them again on future projects.</p>
+
+<p><br />
+<br />
+<i>NDA Signed<br />
+Leading Vehicle Manufacturer from India</i></p>
+
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<!--------------------------------------------------------footer------------------------------------------------------------------------------>
+
+<footer>
+<div class="footer-services">
+<div class="footer-heading">
+<h3>Services</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html#">Artificial Intelligence</a></h3>
+
+<h3><a href="services.html#">Machine Learning</a></h3>
+
+<h3><a href="services.html#">Computer Vision</a></h3>
+
+<h3><a href="services.html#">Internet of things</a></h3>
+
+<h3><a href="services.html#">Research &amp; Development</a></h3>
+
+<h3><a href="services.html#">QA &amp; Testing</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-solutions">
+<div class="footer-heading">
+<h3>Solutions</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html#">Automated Govt ID Verification</a></h3>
+
+<h3><a href="services.html#">Prediction Model from Sensors data</a></h3>
+
+<h3><a href="services.html#">Voice Based Interactive Assessment Applications</a></h3>
+
+<h3><a href="services.html#">Computer Vision app for Visually Impaired</a></h3>
+
+<h3><a href="services.html#">Crowd Counting</a></h3>
+
+<h3><a href="services.html#">Automated License Number Plate Recognition</a></h3>
+
+<h3><a href="services.html#">AI based Currency Detection</a></h3>
+
+<h3><a href="services.html#">IoT Based Application Development</a></h3>
+
+<h3><a href="services.html#">QA and Testing</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-corporate">
+<div class="footer-heading">
+<h3>Corporate</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html#">Partner with us</a></h3>
+
+<h3><a href="services.html#">Engagement Models</a></h3>
+
+<h3><a href="services.html#">Tech solutions for startups</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-about">
+<div class="footer-heading">
+<h3>About</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html#">Our Story</a></h3>
+
+<h3><a href="services.html#">Teams</a></h3>
+
+<h3><a href="services.html#">Leadership</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-careers">
+<div class="footer-heading">
+<h3>Contact Us</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3>Address</h3>
+
+<p>A-88, Vaibhav Nagar,<br />
+Indore 452016 (MP), INDIA</p>
+
+<h3>Email</h3>
+
+<p>info@deepiotics.com<br />
+contact@deepiotics.com<br />
+Cell:+91-98263-24365</p>
+
+<h3>Follow Us</h3>
+
+<div class="socialMedia">
+<div class="facebook"><a href="https://www.facebook.com/Deepiotics-104288471209108/?modal=admin_todo_tour" target="_blank"><img alt="facebook" src="social/facebook.svg" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/mwlite/company/deepiotics" target="_blank"><img alt="linkekdin" src="social/linkedin.svg" /></a></div>
+
+<div class="twitter"><a href="https://mobile.twitter.com/Deepioticspvt/status/1246034138240413701" target="_blank"><img alt="twitter" src="social/twitter.svg" /></a></div>
+
+<div class="instagram"><a href="https://www.instagram.com/deepioticsai/" target="_blank"><img alt="instagram" src="social/instagram.svg" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!--------------------------------------------------------------------footer over----------------------------------------------------------------></body>
+</html>

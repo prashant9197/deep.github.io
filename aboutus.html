@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepiotics | About</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <!--Nav Bar Starts-->
+        <!--Nav For Mobile Starts-->
+        <nav class="navMobile">
+            <div style="z-index:1000;;"class="nav-links" id="mob-menu">
+            <div style="width:100%;"class="logo-container">
+                   <a href="index.php"><img src="logo.png" alt="" class="logo-container-img-nav"></a> 
+                </div>
+                    <div class="#aboutusM"><a href="aboutus.html" class="nav-link">About Us</a></div>
+                    <div class="#servicesM"> <a href="services.html" class="nav-link">Services</a>
+                    </div>
+                    <div class="#soultionM"><a href="solution.html" class="nav-link">Solution</a></div>
+                    <div class="#contactM"><a href="contact.php" class="nav-link">Contact Us</a></div>
+                    <div class="#blogM"><a href="http://www.deepiotics.com/blog/" class="nav-link">Blog</a></div>
+            </div>
+            <div class="nav">
+                <div class="logo" id="logo-container logo-container-mobile">
+                   <a href="index.php"><img style="width:125px; opacity: 1;" id="logo-image-mobile" class="logo-container-image-mobile" src="logo.png" alt="logo"></a>
+                </div>
+                <div  class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Nav For Mobile Ends-->
+        
+        <div class="navWrapper">
+            
+          
+            <ul class="mainList">
+
+                
+                    <a href="index.php"><img src="logo.png" alt="logo" style="width:125px; opacity: 1;" id="logo-image"></a>  
+                     
+                  
+                <li style="grid-area: about;" class="about">
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li  style="grid-area: services;"class="navServices">
+                    <a href="services.html">Services</a>
+                    <ul class="subListServices">
+                        <li class="aiesd">
+                            <img src="icons/aiLogo.svg" alt="">
+                            <a href="ai.html">Artificial Intelligence</a>
+                        </li>
+                        <li class="aiod">
+                            <img src="icons/machine-learning.svg" alt="">
+                            <a href="ml.html">Machine Learning</a>
+                        </li>
+                        <li class="nlp">
+                            <img src="icons/vision.svg" alt="">
+                            <a href="vision.html">Computer Vision</a>
+                        </li>
+                        <li class="ml">
+                            <img src="icons/iotLogo.svg" alt="">
+                            <a href="iot.html">Internet of things</a>
+                        </li>
+                        <li class="speech">
+                            <img src="icons/search.svg" alt="">
+                            <a href="research.html">Research & Development</a>
+                        </li>
+                        <li class="aic">
+                            <img src="icons/information.svg" alt="">
+                            <a href="testing.html">QA & Testing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li style="grid-area: solution;"class="solution">
+                    <a href="solution.html">Solution</a>
+                </li>
+                <li style="grid-area:case;"class="case">
+                    <a href="contact.php">Contact Us</a>
+                </li>
+                <li style="grid-area:blog;"class="blog">
+                    <a href="http://www.deepiotics.com/blog/">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <!--Nav Bar Ends-->
+    </header>
+    <script type="text/JavaScript">
+                    const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+
+            burger.addEventListener('click', () =>{
+                nav.classList.toggle('nav-active');
+
+                navLinks.forEach((link, index) => {
+                    if(link.style.animation){
+                        link.style.animation = ``;
+                    }
+                    else{
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`; 
+                    }
+                });
+                burger.classList.toggle('toggle');
+            });
+
+            
+            }
+
+     navSlide();</script>
+        <div class="mainGrid">
+            <div class="topContent">
+                <div class="startupStart">
+                    <h3>The Start of a <b>Startup</b></h3>
+                    <p> We started as freelance consultants with one room in November 2018.
+                        Serving researchers, doctors, professors in Artificial Intelligence and 
+                        Machine learning. Eventually our good work paid out, and Deepiotics is found, 
+                        today we are team of 12 members working on some of the most innovative projects in AI and ML.</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G_gR5HrVwCU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+            <div class="team">
+                <div class="teamSub">
+                    <div style="grid-area:ayan;" class="teamMember" id="ayan">
+                        <img src="img/ayan.jpg" alt="">
+                        <h4>Ayan Nigam</h4>
+                        <h4 style="font-size: 19px;">Founder & CEO </h4>
+                        <div class="icons">
+                            <a target="_blank" href="https://www.linkedin.com/in/ayannigam?originalSubdomain=in"><span class="iconify" data-icon="jam:linkedin-square" data-inline="false"></span></a>
+                        </div>
+                        <div style="color:white;"class="moreInfo">
+                            <h4><span style="font-weight:600;">Education: </span>
+                                 MS Information Technology<br>
+                                <span style="font-weight:600;">Background:</span>  
+                                  Consultant,QA,Sales<br>
+                                  <span style="font-weight:600;">Experience:</span>  14 years in IT, Ex-Accenture Started ‘Weblink’ in 2005 - 2010 Open School in 2008 Developer, QA, Manager <br><br>
+                            </h4>
+                        </div>
+                    </div>
+                    <div style="grid-area: rahul;"class="teamMember" id="rahul">
+                        <img  src="img/rahul.png" alt="">
+                        <h4>Rahul Jain</h4>
+                        <h4 style="font-size: 19px;">CTO</h4>
+                        <div class="icons">
+                            <a target="_blank" href="https://www.linkedin.com/in/rahul-jain-1904a027?originalSubdomain=in"><span class="iconify" data-icon="jam:linkedin-square" data-inline="false"></span></a>
+                        </div>
+                        <div style="color:white;"class="moreInfo">
+                            <h4><span style="font-weight:600;">Education: </span>
+                                BE Computer Engineering<br>
+                                <span style="font-weight:600;">Background: </span>
+                                Developer, IT Architect<br>
+                                <span style="font-weight:600;">Experience: </span>10 years in IT, Ex-Infosys, Oracle <br><br>
+                            </h4>
+                        </div>
+                    </div>
+                    <div style="grid-area: bhawna;" class="teamMember" id="bhawna">
+                        <img  src="img/bhawna.jpg" alt="">
+                        <h4>Dr. Bhawna Nigam </h4>
+                        <h4 style="font-size: 19px;">Advisor, Artificial Intelligence, ML, Computer Vision</h4>
+                        <div class="icons">
+                            <a target="_blank" href="https://www.linkedin.com/in/dr-bhawna-nigam-208b4825?originalSubdomain=in"><span class="iconify" data-icon="jam:linkedin-square" data-inline="false"></span></a>
+                        </div>
+                        <div style="color:white;"class="moreInfo">
+                            <h4><span style="font-weight:600;">Education: </span>
+                                Ph.D. Machine Learning<br>
+                                <span style="font-weight:600;">Background: </span>
+                                Professor, Researcher, AI & ML Expert<br>
+                                <span style="font-weight:600;">Experience: </span>12 years in IT,  +1 Patent, 25+ Research Ambassador of Indore Chapter “WIMLDS” <br><br>
+                            </h4>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+                
+                <!--------------------------------------------------------footer------------------------------------------------------------------------------>
+     <footer>
+        <div class="footer-services">
+            <div class="footer-heading">
+                <h3>Services</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Artificial Intelligence</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Machine Learning</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Computer Vision</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Internet of things</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Research & Development</h3>
+                    </a>
+                    <a href="#">
+                        <h3>QA & Testing</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-solutions">
+            <div class="footer-heading">
+                <h3>Solutions</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Automated Govt ID Verification</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Prediction Model from Sensors data</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Voice Based Interactive Assessment Applications</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Computer Vision app for Visually Impaired</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Crowd Counting</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Automated License Number Plate Recognition</h3>
+                    </a>
+                    <a href="#">
+                        <h3>AI based Currency Detection</h3>
+                    </a>
+                    <a href="#">
+                        <h3>IoT Based Application Development</h3>
+                    </a>
+                    <a href="#">
+                        <h3>QA and Testing</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-corporate">
+            <div class="footer-heading">
+                <h3>Corporate</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Partner with us</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Engagement Models</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Tech solutions for startups</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-about">
+            <div class="footer-heading">
+                <h3>About</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Our Story</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Teams</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Leadership</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-careers">
+            <div class="footer-heading">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <h3>Address</h3>
+                    <p>A-88, Vaibhav Nagar, <br> Indore 452016 (MP), INDIA</p> 
+                    <h3>Email</h3>
+                    <p>info@deepiotics.com <br> contact@deepiotics.com</p>
+                    <h3>Follow Us</h3>
+                    <div class="socialMedia">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/Deepiotics-104288471209108/?modal=admin_todo_tour" target="_blank"><img src="social/facebook.svg" alt="facebook"></a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/mwlite/company/deepiotics" target="_blank"><img src="social/linkedin.svg" alt="linkekdin"></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://mobile.twitter.com/Deepioticspvt/status/1246034138240413701" target="_blank"><img  src="social/twitter.svg" alt="twitter"></a>
+                        </div>
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/deepioticsai/" target="_blank"><img  src="social/instagram.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------------------------------------------footer over---------------------------------------------------------------->
+    </div>
+</body>
+</html>

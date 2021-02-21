@@ -1,0 +1,137 @@
+.covid-text{
+    display: flex;
+    padding: 20px;
+    padding-top: 30px;
+    color: white;
+}
+.covid-left{
+    padding-left: 50px;
+    width: 50%;
+    align-items: center;
+}
+.covid-heading{
+    width: fit-content;
+}
+.covid-heading h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+}
+.covid-para{
+    color: black;
+    font-weight: 300;
+    font-size: 18px;
+}
+.illustration{
+    width: 25%;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+.corona-image{
+    align-items: center;
+    padding-bottom: 20px;
+}
+.deepcovid{
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+}
+.corona-video{
+
+    align-items: center;
+    padding:0 60px 0 60px;
+}
+.corona-video h2{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.corona-video iframe{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+.moreDetails h4{
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    font-weight: 300;
+}
+@media screen and (max-width:1300px){
+    .illustration{
+        width: 40%;
+    }
+ 
+   
+}
+@media screen and (max-width:1024px){
+    .corona-image{
+        flex-direction: column;
+    }
+    .corona-video{
+        margin: auto;
+    }
+    .corona-video h2{
+        text-align: center;
+        margin: auto;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width:800px){
+    .illustration{
+        display: none;
+    }
+
+    .covid-left{
+        width: auto;
+        text-align: center;
+        margin: auto;
+        padding-left: 0px;
+    }
+
+    .covid-heading{
+        text-align: center;
+        width: auto;
+    }
+    .corona-image{
+        height: auto;
+        margin: auto;
+    }
+    .corona-video iframe{
+        width: 100%;
+        padding: 10px 40px 10px 40px;
+        height: auto;
+    }
+    .corona-video{
+        width: auto;
+        margin: auto;
+        padding: 10px 0 10px 0 !important;
+    }
+    .moreDetails h4{
+       font-size: 20px;
+    }
+}
+@media screen and (width:2560px){
+    .covid-left{
+        width: 60%;
+    }
+    .covid-heading h1{
+        font-size: 90px;
+    }
+    .covid-para{
+        font-size: 30px;
+    }
+    .corona-video iframe{
+        width: auto;
+    }
+    .corona-video{
+        width: auto;
+        height: 1040px;
+    }
+    .deepcovid{
+        width: 200%;
+    }
+}

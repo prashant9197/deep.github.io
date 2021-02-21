@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Deepiotics | Services</title>
+	<link href="index.css" rel="stylesheet" />
+	<link href="services.css" rel="stylesheet" />
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&amp;display=swap" rel="stylesheet" />
+</head>
+<body>
+<header><!--Nav Bar Starts--><!--Nav For Mobile Starts-->
+<nav class="navMobile">
+<div class="nav-links" id="mob-menu" style="z-index:1000;;">
+<div class="logo-container" style="width:100%;"><a href="index.php"><img alt="" class="logo-container-img-nav" src="logo.png" /></a></div>
+
+<div class="aboutusM"><a class="nav-link" href="aboutus.html">About Us</a></div>
+
+<div class="servicesM"><a class="nav-link" href="services.html">Services</a></div>
+
+<div class="soultionM"><a class="nav-link" href="solution.html">Solution</a></div>
+
+<div class="contactM"><a class="nav-link" href="contact.php">Contact Us</a></div>
+
+<div class="blogM"><a class="nav-link" href="http://www.deepiotics.com/blog/">Blog</a></div>
+</div>
+
+<div class="nav">
+<div class="logo" id="logo-container logo-container-mobile"><a href="index.php"><img alt="logo" class="logo-container-image-mobile" id="logo-image-mobile" src="logo.png" style="width:125px; opacity: 1;" /></a></div>
+
+<div class="burger">
+<div class="line1"></div>
+
+<div class="line2"></div>
+
+<div class="line3"></div>
+</div>
+</div>
+</nav>
+<!--Nav For Mobile Ends-->
+
+<div class="navWrapper">
+<ul class="mainList">
+	<a href="index.php"><img alt="logo" id="logo-image" src="logo.png" style="width:125px; opacity: 1;" /></a>
+	<li class="about" style="grid-area: about;"><a href="aboutus.html">About Us</a></li>
+	<li class="navServices" style="grid-area: services;"><a href="services.html">Services</a>
+	<ul class="subListServices">
+		<li class="aiesd"><img alt="" src="icons/aiLogo.svg" /> <a href="ai.html">Artificial Intelligence</a></li>
+		<li class="aiod"><img alt="" src="icons/machine-learning.svg" /> <a href="ml.html">Machine Learning</a></li>
+		<li class="nlp"><img alt="" src="icons/vision.svg" /> <a href="vision.html">Computer Vision</a></li>
+		<li class="ml"><img alt="" src="icons/iotLogo.svg" /> <a href="iot.html">Internet of things</a></li>
+		<li class="speech"><img alt="" src="icons/search.svg" /> <a href="research.html">Research &amp; Development</a></li>
+		<li class="aic"><img alt="" src="icons/information.svg" /> <a href="testing.html">QA &amp; Testing</a></li>
+	</ul>
+	</li>
+	<li class="solution" style="grid-area: solution;"><a href="solution.html">Solution</a></li>
+	<li class="case" style="grid-area:case;"><a href="contact.php">Contact Us</a></li>
+	<li class="blog" style="grid-area:blog;"><a href="http://www.deepiotics.com/blog/">Blog</a></li>
+</ul>
+</div>
+<!--Nav Bar Ends--></header>
+<script type="text/JavaScript">
+                    const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+
+            burger.addEventListener('click', () =>{
+                nav.classList.toggle('nav-active');
+
+                navLinks.forEach((link, index) => {
+                    if(link.style.animation){
+                        link.style.animation = ``;
+                    }
+                    else{
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`; 
+                    }
+                });
+                burger.classList.toggle('toggle');
+            });
+
+            
+            }
+
+     navSlide();</script>
+
+<div class="banner">
+<div class="banner-heading">
+<div class="typing-effect">
+<h1 class="typing-heading-mobile"><b>Enable your business with</b></h1>
+
+<h1 class="typing-heading-normal"><b>Enable your business</b><br />
+with&nbsp;</h1>
+<br />
+<script src="js/typed.js"></script><script type="text/JavaScript">
+                            var typed = new Typed('.text-anim', {
+                            strings: ['Artificial Intelligence', 'Machine Learning', 'Natural Language Processing','Computer Vision', 'Data Science', 'Conversational AI', 'Predictive Analysis', 'Research & Development'],
+                            typeSpeed: 20,
+                            loop: true,
+                            showCursor: false,
+                            backSpeed: 40
+                        });
+                     </script><script type="text/JavaScript">
+                        var typed = new Typed('.text-anim-normal', {
+                        strings: ['Artificial Intelligence', 'Machine Learning', 'Natural Language Processing','Computer Vision', 'Data Science', 'Conversational AI', 'Predictive Analysis', 'Research & Development'],
+                        typeSpeed: 20,
+                        loop: true,
+                        showCursor: false,
+                        backSpeed: 40
+                    });
+                 </script></div>
+
+<div class="slide-container-mobile">
+<div class="Slides-mobile fade"><img src="src/object_detection.gif" style="width:100%" /></div>
+
+<div class="Slides-mobile fade"><img src="src/object-detection-cars.48e1a479.gif" style="width:100%" /></div>
+</div>
+<script>
+                var slideIndexMobile = 0;
+                showSlidesMobile();
+    
+                function showSlidesMobile() {
+                    var j;
+                    var slidesMobile = document.getElementsByClassName("Slides-mobile");
+                    for (j = 0; j < slidesMobile.length; j++) {
+                        slidesMobile[j].style.display = "none";
+                    }
+                    slideIndexMobile++;
+                    if (slideIndexMobile > slidesMobile.length) { slideIndexMobile = 1 }
+                    slidesMobile[slideIndexMobile - 1].style.display = "block";
+                    setTimeout(showSlidesMobile, 2000);
+                }
+            </script>
+
+<div class="services-heading-banner">
+<h5>End to End solution from machine learning core, to a REST API for interacting with the model, or even a web interface we are with you.<span style="color:081037; font-weight: 900;"> </span></h5>
+<!--<div class="underline u-serv"></div>-->
+
+<div class="schedule"><!--Schedule--><a class="btn btn-primary btn-link mt-3" href="contact.php">Schedule a Call</a> <!--Schedule--></div>
+</div>
+</div>
+
+<div class="slide-container">
+<div class="Slides fade"><img src="src/object_detection.gif" style="width:100%" /></div>
+
+<div class="Slides fade"><img src="src/object-detection-cars.48e1a479.gif" style="width:100%" /></div>
+</div>
+<script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("Slides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+        </script></div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<section class="consultancy-services">
+<div class="services-heading">
+<h1>AI<span style="color:081037; font-weight: 900;"> Consultancy</span></h1>
+
+<div class="underline"></div>
+</div>
+
+<div class="services-para">
+<p>Our experts help professionals, start-ups and enterprises to develop and integrate AI technologies. We will work with you through all the stages, from gathering business requirements and defining the action plan to user training and continuous maintenance.</p>
+</div>
+
+<div class="row row-1">
+<div class="col-sm-6"><img alt="Costs reduction" src="src/cost.svg" style="width: 15%; min-width: 15px;" />
+<h4>AI Consultancy</h4>
+
+<p>Our AI consulting services provide most efficient mode of implementation to you. We will understand the actual scope of your requirements before we come up with an optimal AI strategy. Recognizing your challenges and capabilities,</p>
+
+<p></p>
+</div>
+
+<div class="col-sm-6"><img alt="Costs reduction" src="./src/agile_development.png" style="width: 15%; min-width: 15px;" />
+<h4>End to End AI Development</h4>
+
+<p>We develop, customize, and redesign AI-driven systems at any project stage. We are capable of taking up complex tasks, feeding on our expertise in data science, backend development, cloud computing, and integration, From understanding requirements to deployment and End user training, we will be with you.</p>
+
+<p></p>
+</div>
+
+<div class="col-sm-6"><img alt="Costs reduction" src="./src/team.png" style="width: 15%; min-width: 15px;" />
+<h4>Experienced Project Team</h4>
+
+<p>The team consists of Data Scientist, Staticians, Cloud Experts, Mobile App developers and Testers. We have successfully completed projects in Machine Learning, Computer Vision and Deep Learning.</p>
+
+<p></p>
+</div>
+<!-- <div class="col-sm-6">
+			<p><img src="/wp-content/themes/Deepiotics/images/editor/ills/risk.png" alt="Reduced Costs" style="width: 65%; min-width: 275px;"></p>
+			<h4>Lower risks</h4>
+			<p>We are commited to quality of deliverables, time frames and budget. 85% of our customers are loyal clients. We have a 98% project success rate. Since 2015, customers accepted 48 000 hours and 136 projects.</p>
+			<p>&nbsp;</p>
+		</div> -->
+
+<div class="col-sm-6"><img alt="High Accuracy" src="./src/mission.svg" style="width: 15%; min-width: 15px;" />
+<h4>Higher Accuracy</h4>
+
+<p>We engineer your applicatiosn that works with full concentration rather than an subconsious human mind, hence they are more accurate. No AI system runs on poor or incorrect data, hence our expert will audit and verify data with your requirements and goals.</p>
+
+<p></p>
+</div>
+
+<div class="col-sm-6"><img alt="High Accuracy" src="./src/compliance.png" style="width: 15%; min-width: 15px;" />
+<h4>Regulatory Compliance</h4>
+
+<p>While handling data we take care of regulatory compliance, such as HIPPA and GDPR</p>
+
+<p></p>
+</div>
+<!-- 	<div class="col-sm-6">
+			<p><img src="/wp-content/themes/Deepiotics/images/editor/ills/annotation-specs.png" alt="Annotated Data by Deepiotics" style="width: 65%; min-width: 275px;"></p>
+			<h4>Annotated Data</h4>
+			<p>Our anotation specialits can easily and substantialy label thousands of images for your project.</p>
+			<p>&nbsp;</p>
+		</div> --><!-- <div class="col-sm-6">
+			<p><img src="/wp-content/themes/Deepiotics/images/editor/ills/gpu.png" alt="GPU Economy with Deepiotics" style="width: 65%; min-width: 275px;"></p>
+			<h4>GPU Economy</h4>
+			<p>Our clients are granted with adequate GPU per project. No need to shop around for desirable and required instances on other top rated sevices.</p>
+			<p>&nbsp;</p>
+		</div> --></div>
+</section>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<section class="services-innovation">
+<div class="cta-innovation">
+<div class="innovation-para">
+<p>Are you ready for an innovation-driven change ?<br />
+<strong>Find out how AI can redefine your business.</strong></p>
+</div>
+
+<div class="contactus-button"><a class="btn btn-primary btn-link mt-3 button-contactus" href="https://deepiotics.com/contact.php">CONTACT US</a></div>
+</div>
+</section>
+<!--Workflow-->
+
+<section class="services">
+<div class="col-12">
+<p></p>
+
+<h2 class="text-sm-center workflow" style="color: blue;">Workflow</h2>
+
+<p class="text-sm-center"><strong>Our typical project consist of stages we describe below.<br />
+Depending on specificity of each task some parts might be longer, shorter or skipped.</strong></p>
+
+<p></p>
+
+<div class="orange-top-line"></div>
+
+<div class="workflow-line"></div>
+
+<div class="text-sm-center"><span class="workflow-button">Baseline</span></div>
+
+<div class="row orange-line">
+<div class="col-sm-6 d-none d-sm-block" style="padding-right: 0;">
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<div class="workflow-arrow-left">
+<div class="content-workflow-left">
+<h4>Preparing Rough Proposal for the Development (Exploration)</h4>
+
+<p><strong>Input:</strong> research and project constraints.<br />
+<strong>Deliverable:</strong> scope of work, schedule, budget and client&rsquo;s kick-off meeting.<br />
+<strong>Time frame:</strong> 1-2 weeks.</p>
+</div>
+
+<div class="line-left"></div>
+</div>
+</div>
+
+<div class="col-sm-6" style="padding-left: 0;">
+<p></p>
+
+<div class="workflow-arrow-right">
+<div class="line-right"></div>
+
+<div class="content-right">
+<h4>Initial Review of the Task (Audit)</h4>
+
+<p><strong>Start:</strong> internal kick-off meeting with Team leaders.<br />
+<strong>Deliverable:</strong> assessment of what can be done based on our experience solving similar tasks and current modern solutions.We evaluate the potential of your existing data, software infrastructure and technology to deploy AI systems and workflows. We discover the right AI technology and tools for bringing improvement<br />
+<strong>Time frame:</strong> 3-5 days.</p>
+</div>
+</div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<div class="workflow-arrow-right">
+<div class="line-right"></div>
+
+<div class="content-right">
+<h4>Research and Technology Selection</h4>
+
+<p><strong>Input:</strong> detailed understanding of a project objectives, their feasibility and performance requirements.<br />
+<strong>Deliverable:</strong> review/testing of most promising approaches, discusion and approval of a testing protocol that will be used for quality evaluation during further development, prepare detail plan for further development.<br />
+<strong>Time frame:</strong> 1-3 weeks.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-sm-center"><span class="workflow-button">Proof of Concept</span></div>
+
+<div class="row orange-line">
+<div class="col-sm-6 d-none d-sm-block" style="padding-right: 0;">
+<p></p>
+
+<div class="workflow-arrow-left">
+<div class="content-workflow-left">
+<h4>Product Pilot and Technology Validation</h4>
+
+<p><strong>Input:</strong> technology and hypotesys.<br />
+<strong>Deliverable:</strong> realization of the certain idea to demonstrate feasibility.<br />
+<strong>Time frame:</strong> 4-8 weeks.</p>
+</div>
+
+<div class="line-left"></div>
+</div>
+</div>
+
+<div class="col-sm-6" style="padding-left: 0;">
+<p></p>
+
+<div class="workflow-arrow-right d-sm-none">
+<div class="line-right"></div>
+
+<div class="content-right product">
+<h4>Product Pilot and Technology Validation</h4>
+
+<p><strong>Input:</strong> technology and hypotesys.<br />
+<strong>Deliverable:</strong> We experiment with a small-scale system.<br />
+<strong>Time frame:</strong> 4-8 weeks.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-sm-center"><span class="workflow-button">MVP</span></div>
+
+<div class="row orange-line">
+<div class="col-sm-6 d-none d-sm-block" style="padding-right: 0;">
+<p></p>
+</div>
+
+<div class="col-md-6" style="padding-left: 0;">
+<p></p>
+
+<div class="workflow-arrow-right">
+<div class="line-right"></div>
+
+<div class="content-right">
+<h4>Development Improvements of the Product to Make it Production Ready</h4>
+
+<p><strong>Input:</strong> initial prototype.<br />
+<strong>Deliverable:</strong> Average team may vary but 2 roles are permanent<br />
+&bull; Team lead, who shares vision and provide technician exportation and quality of code.<br />
+&bull; Project manager, helps you to find and check several routines questions in the project and provide a short and useful report each week.<br />
+<strong>Time frame:</strong> Duration of this stage significantly depends on the tasks and results achieved during the development of the initial prototype.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="orange-bottom-line"></div>
+
+<h4 class="text-sm-center workflow-para" style="font-size: 18px;">Following this cycle allows us to take full responsibility for development of product<br />
+approved by the client and make sure that everything will be completed as expected and on time.</h4>
+
+<p></p>
+</div>
+</section>
+<!--/workflow>
+	
+		
+		
+		
+        <!-- <div class="container-outer">
+            <div class="card-own card-services">
+                <img src="icons/aiLogo.svg" alt="artificialIntelligence" style="width:30%">
+                <div class="container-services">
+                    <h3>Accruracy</h3>
+                    <p>Machines works with full concentration than an subconsious human mind, hence they are more accurate.</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/machine-learning.svg" alt="machineLearning" style="width:30%">
+                <div class="container-services">
+                    <h3>Reliability</h3>
+                    <p>Since accuracy is high outputs from AI are more reliable. Your business can achieve highly productive outcomes</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/vision.svg" alt="computerVision" style="width:30%">
+                <div class="container-services">
+                    <h3>Minimum Intervention</h3>
+                    <p>We develop applications that can adapt to the environmental changes, train themselves and flawlessly deliver tasks, without human intervention</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-outer"> 
+            <div class="card-own card-services">
+                <img src="icons/iotLogo.svg" alt="artificialIntelligence" style="width:30%">
+                <div class="container-services">
+                    <h3>Internet of things</h3>
+                    <p>Connect, Control and Manage devices for your home and workplace.</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/search.svg" alt="research-n-development" style="width:30%">
+                <div class="container-services">
+                    <h3>Research &amp; Development</h3>
+                    <p>Our team of Data Scientist and Researchers experienced with both research and implementation.</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/information.svg" alt="computerVision" style="width:30%">
+                <div class="container-services">
+                    <h3>QA &amp; Testing</h3>
+                    <p>Dedicated Testing team for your products, get all testing solutions under one roof.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+--><!--Our Work--><!--/Our Work-->
+
+<section class="testimonials"><!--Testimonials-->
+<div class="container">
+<div class="row">
+<div class="col-12">
+<p></p>
+
+<h2 class="text-center" style="color: 3c3c3b;"></h2>
+
+<h2 class="text-center" style="color: 3c3c3b;">Our Clients Speaks</h2>
+
+<p></p>
+</div>
+
+<div class="col-md-3 ">
+<h3 style="color: Green;">Machine Vision Problems</h3>
+
+<p>I recommend them highly for any sophisticated <b>image analysis or machine vision</b> tasks.</p>
+
+<p>Implemented Retrographic sensing for the measurement of surface texture and shape.</p>
+
+<p style="color: 838383;"><i>Ashok, CEO<br />
+<b>Biddano</b></i></p>
+
+<p></p>
+</div>
+
+<div class="col-md-3">
+<h3>AI based tool for<br />
+<strong>Medical Imaging</strong></h3>
+
+<p>The team is professional and are expert with AI technologies.Within short span they developed AI model for us which is working very well. We are now&nbsp;working with the team again on projects requiring vision expertise.</p>
+
+<p>Deepiotics team built us a phenomenally <b>effective</b> disease detection&nbsp;<b>system using X-ray</b>, tuned to the corpus of images.</p>
+
+<p style="color: 838383;"><i>Kishore Shah,<br />
+CEO SPOCHUB<br />
+ESDS Software Solutions</i></p>
+
+<p></p>
+</div>
+
+<div class="col-md-3">
+<h3>Interactive Voice Based Assessment System</h3>
+
+<p>The team did an excellent job working on our projects. Great NLP developers with hard working and self-motivated team. I hope to work with them on future projects.</p>
+
+<p>Project was set up to build a <b>proof of concept</b> for computer vision. Based on the results, we started a larger project.</p>
+
+<p style="color: 838383;"><i><b>NDA Signed<br />
+US Based Client</b></i></p>
+
+<p></p>
+</div>
+
+<div class="col-md-3">
+<h3>Great ML developer company</h3>
+
+<p>We partnered Deepiotics for developing <strong>Prediction algorithm</strong> for very large data set generated from iOT sensors placed in Cars. The team did an excellent job developing the model. We were <b>pleased by a hard-working and self-motivated team</b>. We felt they were really committed to our project. I hope to work with them again on future projects.</p>
+
+<p style="color: 838383;"><i>NDA Signed<br />
+Leading Vehicle Manufacturer from India</i></p>
+
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<!--------------------------------------------------------footer------------------------------------------------------------------------------>
+
+<footer>
+<div class="footer-services">
+<div class="footer-heading">
+<h3>Services</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html">Artificial Intelligence</a></h3>
+
+<h3><a href="services.html">Machine Learning</a></h3>
+
+<h3><a href="services.html">Computer Vision</a></h3>
+
+<h3><a href="services.html">Internet of things</a></h3>
+
+<h3><a href="services.html">Research &amp; Development</a></h3>
+
+<h3><a href="services.html">QA &amp; Testing</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-solutions">
+<div class="footer-heading">
+<h3>Solutions</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html">Automated Govt ID Verification</a></h3>
+
+<h3><a href="services.html">Prediction Model from Sensors data</a></h3>
+
+<h3><a href="services.html">Voice Based Interactive Assessment Applications</a></h3>
+
+<h3><a href="services.html">Computer Vision app for Visually Impaired</a></h3>
+
+<h3><a href="services.html">Crowd Counting</a></h3>
+
+<h3><a href="services.html">Automated License Number Plate Recognition</a></h3>
+
+<h3><a href="services.html">AI based Currency Detection</a></h3>
+
+<h3><a href="services.html">IoT Based Application Development</a></h3>
+
+<h3><a href="services.html">QA and Testing</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-corporate">
+<div class="footer-heading">
+<h3>Corporate</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html">Partner with us</a></h3>
+
+<h3><a href="services.html">Engagement Models</a></h3>
+
+<h3><a href="services.html">Tech solutions for startups</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-about">
+<div class="footer-heading">
+<h3>About</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="services.html">Our Story</a></h3>
+
+<h3><a href="services.html">Teams</a></h3>
+
+<h3><a href="services.html">Leadership</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-careers">
+<div class="footer-heading">
+<h3>Contact Us</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3>Address</h3>
+
+<p>A-88, Vaibhav Nagar,<br />
+Indore 452016 (MP), INDIA</p>
+
+<h3>Email</h3>
+
+<p>info@deepiotics.com<br />
+contact@deepiotics.com<br />
+Cell:+91-98263-24365</p>
+
+<h3>Follow Us</h3>
+
+<div class="socialMedia">
+<div class="facebook"><a href="https://www.facebook.com/Deepiotics-104288471209108/?modal=admin_todo_tour" target="_blank"><img alt="facebook" src="social/facebook.svg" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/mwlite/company/deepiotics" target="_blank"><img alt="linkekdin" src="social/linkedin.svg" /></a></div>
+
+<div class="twitter"><a href="https://mobile.twitter.com/Deepioticspvt/status/1246034138240413701" target="_blank"><img alt="twitter" src="social/twitter.svg" /></a></div>
+
+<div class="instagram"><a href="https://www.instagram.com/deepioticsai/" target="_blank"><img alt="instagram" src="social/instagram.svg" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!--------------------------------------------------------------------footer over----------------------------------------------------------------></body>
+</html>

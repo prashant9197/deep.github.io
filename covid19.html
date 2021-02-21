@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-178641645-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178641645-1');
+</script><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Deepiotics | Covid-19</title>
+	<link href="index.css" rel="stylesheet" />
+	<link href="covid.css" rel="stylesheet" />
+	<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">.virus {width: 60%; position: absolute; bottom: -10%; right:10%; float: right;}
+    @media (max-width: 768px) {
+      .virus {width:100%; position: relative; bottom: 0; right:0; float: none; padding: 30px;}
+      .covid-heading {padding-top: 50px;}
+}
+	</style>
+</head>
+<body>
+<header><!--Nav Bar Starts--><!--Nav For Mobile Starts-->
+<nav class="navMobile">
+<div class="nav-links" id="mob-menu" style="z-index:1000;;">
+<div class="logo-container" style="width:100%;"><a href="index.php"><img alt="" class="logo-container-img-nav" src="logo.png" /></a></div>
+
+<div class="aboutusM"><a class="nav-link" href="aboutus.html">About Us</a></div>
+
+<div class="servicesM"><a class="nav-link" href="services.html">Services</a></div>
+
+<div class="soultionM"><a class="nav-link" href="solution.html">Solution</a></div>
+
+<div class="contactM"><a class="nav-link" href="contact.php">Contact Us</a></div>
+
+<div class="blogM"><a class="nav-link" href="http://www.deepiotics.com/blog/">Blog</a></div>
+</div>
+
+<div class="nav">
+<div class="logo" id="logo-container logo-container-mobile"><a href="index.php"><img alt="logo" class="logo-container-image-mobile" id="logo-image-mobile" src="logo.png" style="width:125px; opacity: 1;" /></a></div>
+
+<div class="burger">
+<div class="line1"></div>
+
+<div class="line2"></div>
+
+<div class="line3"></div>
+</div>
+</div>
+</nav>
+<!--Nav For Mobile Ends-->
+
+<div class="navWrapper">
+<ul class="mainList">
+	<li><a href="index.php"><img alt="logo" id="logo-image" src="logo.png" style="width:125px; opacity: 1;" /></a></li>
+	<li class="about" style="grid-area: about;"><a href="aboutus.html">About Us</a></li>
+	<li class="navServices" style="grid-area: services;"><a href="services.html">Services</a>
+	<ul class="subListServices">
+		<li class="aiesd"><img alt="" src="icons/aiLogo.svg" /> <a href="ai.html">Artificial Intelligence</a></li>
+		<li class="aiod"><img alt="" src="icons/machine-learning.svg" /> <a href="ml.html">Machine Learning</a></li>
+		<li class="nlp"><img alt="" src="icons/vision.svg" /> <a href="vision.html">Computer Vision</a></li>
+		<li class="ml"><img alt="" src="icons/iotLogo.svg" /> <a href="iot.html">Internet of things</a></li>
+		<li class="speech"><img alt="" src="icons/search.svg" /> <a href="research.html">Research &amp; Development</a></li>
+		<li class="aic"><img alt="" src="icons/information.svg" /> <a href="testing.html">QA &amp; Testing</a></li>
+	</ul>
+	</li>
+	<li class="solution" style="grid-area: solution;"><a href="solution.html">Solution</a></li>
+	<li class="case" style="grid-area:case;"><a href="contact.php">Contact Us</a></li>
+	<li class="blog" style="grid-area:blog;"><a href="http://www.deepiotics.com/blog/">Blog</a></li>
+</ul>
+</div>
+<!--Nav Bar Ends--></header>
+<script type="text/JavaScript">
+                    const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+
+            burger.addEventListener('click', () =>{
+                nav.classList.toggle('nav-active');
+
+                navLinks.forEach((link, index) => {
+                    if(link.style.animation){
+                        link.style.animation = ``;
+                    }
+                    else{
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`; 
+                    }
+                });
+                burger.classList.toggle('toggle');
+            });
+
+            
+            }
+
+     navSlide();</script>
+
+<section class="covid-text">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="covid-heading">
+<h1>Covid<span style="color: red;"> Available Beds</span></h1>
+</div>
+<iframe align="left" frameborder="1" height="500" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRHP3wSGyjSn3Po7JEbk7LaUDL_1WDwv84H9sp0L6MQsqlemWPWVpwdukLyxHCINybr5gUspmcdZXbm/pubhtml?gid=1658672394&amp;single=true&amp;widget=false&amp;headers=false" style="border: none;" width="100%"></iframe></div>
+
+<div class="col-lg-6"></div>
+
+<div class="col-lg-8">
+<div class="covid-heading">
+<h1></h1>
+
+<h1>Chest<span style="color: red;">Xpert</span></h1>
+</div>
+
+<div class="covid-heading">
+<h2><span style="color: black;">An AI Based Covid Risk Score Calculator</span></h2>
+</div>
+
+<div class="covid-para">
+<p>Analyze&nbsp;<b>Blood Reports, <span style="color:#A52A2A;">Chest X-ray</span>, Existing Diseases and Current conditions into consideration to calculates Covid Risk Score.</b></p>
+
+<p>If you are worried about Covid infection use this to get Covid Score for triaging.</p>
+
+<p>Share <b>Health Summary</b> with your Doctor in just a click</p>
+
+<p>Track Covid Related Vitals like<strong> Pulse, SpO2, Temperature</strong>&nbsp;for family members.</p>
+
+<p>Developed with the help of top <b>Pulmonologists and Radiologists</b></p>
+
+<p><strong>Get free access</strong> if you are an Registered Medical practitioner <strong>treating Covid</strong>.</p>
+
+<p><strong>Email with your Medical Practitioner Code to:&nbsp;</strong>ayan@deepiotics.com<email></email></p>
+
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="corona-image">
+<div class="corona-video">
+<h2>Introductory Video</h2>
+<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/l8QXgf-tr_U"></iframe></div>
+
+<div class="deep"><img alt="CovidXTrail" class="deepcovid" src="img/covid.jpeg" /></div>
+
+<div class="moreDetails">
+<h4>For more details contact : <span style="font-weight: bold;">+91 9826324365 | contact@deepiotics.com </span></h4>
+</div>
+</section>
+<!-- hitwebcounter Code START -->
+
+<p><a href="https://www.hitwebcounter.com" target="_blank"><img alt="PHP Hits Count" border="0" src="https://hitwebcounter.com/counter/counter.php?page=7226734&amp;style=0007&amp;nbdigits=5&amp;type=page&amp;initCount=0" title="User Stats" /> </a> <!--------------------------------------------------------footer------------------------------------------------------------------------------></p>
+
+<footer>
+<div class="footer-services">
+<div class="footer-heading">
+<h3>Services</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="#">Artificial Intelligence</a></h3>
+
+<h3><a href="#">Machine Learning</a></h3>
+
+<h3><a href="#">Computer Vision</a></h3>
+
+<h3><a href="#">Internet of things</a></h3>
+
+<h3><a href="#">Research &amp; Development</a></h3>
+
+<h3><a href="#">QA &amp; Testing</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-solutions">
+<div class="footer-heading">
+<h3>Solutions</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="#">Automated Govt ID Verification</a></h3>
+
+<h3><a href="#">Prediction Model from Sensors data</a></h3>
+
+<h3><a href="#">Voice Based Interactive Assessment Applications</a></h3>
+
+<h3><a href="#">Computer Vision app for Visually Impaired</a></h3>
+
+<h3><a href="#">Crowd Counting</a></h3>
+
+<h3><a href="#">Automated License Number Plate Recognition</a></h3>
+
+<h3><a href="#">AI based Currency Detection</a></h3>
+
+<h3><a href="#">IoT Based Application Development</a></h3>
+
+<h3><a href="#">QA and Testing</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-corporate">
+<div class="footer-heading">
+<h3>Corporate</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="#">Partner with us</a></h3>
+
+<h3><a href="#">Engagement Models</a></h3>
+
+<h3><a href="#">Tech solutions for startups</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-about">
+<div class="footer-heading">
+<h3>About</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3><a href="#">Our Story</a></h3>
+
+<h3><a href="#">Teams</a></h3>
+
+<h3><a href="#">Leadership</a></h3>
+</div>
+</div>
+</div>
+
+<div class="footer-careers">
+<div class="footer-heading">
+<h3>Contact Us</h3>
+</div>
+
+<div class="container-content">
+<div class="line"></div>
+
+<div class="footer-content">
+<h3>Address</h3>
+
+<p>A-88, Vaibhav Nagar,<br />
+Indore 452016 (MP), INDIA</p>
+
+<h3>Email</h3>
+
+<p>info@deepiotics.com<br />
+contact@deepiotics.com</p>
+
+<h3>Follow Us</h3>
+
+<div class="socialMedia">
+<div class="facebook"><a href="https://www.facebook.com/Deepiotics-104288471209108/?modal=admin_todo_tour" target="_blank"><img alt="facebook" src="social/facebook.svg" /></a></div>
+
+<div class="linkedin"><a href="https://www.linkedin.com/mwlite/company/deepiotics" target="_blank"><img alt="linkekdin" src="social/linkedin.svg" /></a></div>
+
+<div class="twitter"><a href="https://mobile.twitter.com/Deepioticspvt/status/1246034138240413701" target="_blank"><img alt="twitter" src="social/twitter.svg" /></a></div>
+
+<div class="instagram"><a href="https://www.instagram.com/deepioticsai/" target="_blank"><img alt="instagram" src="social/instagram.svg" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><!--------------------------------------------------------------------footer over----------------------------------------------------------------></body>
+</html>

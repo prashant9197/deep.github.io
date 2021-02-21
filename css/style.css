@@ -1,0 +1,53 @@
+
+body {
+  color: #666666;
+}
+section {padding: 40px 0;}
+h1 {color: #4bacc6; font-size: 40px; line-height: 50px; text-align: center;padding: 30px 0;text-shadow: 4px 4px 2px rgba(75, 172, 198, 1);
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #fff; font-weight: 600;}
+h2 {text-align: center;padding: 20px; font-size: 30px;}
+h2 span {color: #00b0f0;}
+h3 {text-align: center;padding: 20px; font-size: 24px;}
+h4 {color: #00b0f0;}
+.top-box {width: 100%; text-align: right;color: #666666;padding: 20px 20px 60px; font-size: 20px;}
+button:hover{background:#00b0f0;}
+.list {text-align: left;padding: 30px 0;}
+.list li {list-style: none;line-height: 30px;}
+.list li i {color: #ff0000;}
+.line {width: 2px; height: 100%; background-color:#00b0f0; margin: 0 auto;}
+.list strong {color: #00b0f0;}
+.list span {color: #00b050; font-weight: 500;}
+.start-btn {background-color: #ffc000; color: #000; padding:5px 10px; text-align: center;border: 0px;}
+.fast {padding: 30px;}
+.fast h2 {color: #00b0f0;}
+.fast h2 span {color:#00b050; }
+.fast h5{float: right;padding: 20px 50px;}
+.fast b {color: #00b0f0; border-bottom:1px #00b0f0 solid; display: block;}
+.padd0 {padding: 0; margin: 0;}
+.innovate {position: relative;}
+.innovate ul {text-align: center;list-style: none; padding: 0;}
+.innovate h2 {text-align: center; font-size: 24px;}
+.innovate hr {height: 1px; background-color: #ccc; width: 100%; border: none;position: absolute; top:43%; display: block;}
+.innovate ul li span {font-size: 40px; color: #cbcbcb;line-height: 0;}
+.expertise-box {width: 80%; min-height: 250px;margin: 10%;-webkit-box-shadow: -1px 3px 7px 2px rgba(0,0,0,0.25);
+-moz-box-shadow: -1px 3px 7px 2px rgba(0,0,0,0.25);
+box-shadow: -1px 3px 7px 2px rgba(0,0,0,0.25); border-radius: 5px; padding: 15px;}
+
+.expertise-box h3 {padding: 5px 0; color: #000;}
+.expertise-box img {width: 80px;}
+.expertise h2 {font-weight: 300;color: #000;}
+.expertise h2  {color: #000; font-weight: 500;}
+
+.expertise-box:hover {background:#041761 ;color: #fff;}
+.expertise-box:hover h3  {color: #fff;}
+
+footer { background-image: linear-gradient(#001a7b, #081039);padding: 30px; color: rgb(201, 201, 201)}
+footer h3 {font-size: 20px; padding: 5px 0; text-align: left;}
+footer ul {text-align: left; padding: 10px; border-left:1px #3fcaf8 solid;}
+footer ul li {list-style: none; padding: 0 5px; line-height: 22px;}
+footer ul li:hover {color: #fff;cursor: pointer;}
+.socialmedia i {padding: 5px; color: #696969; font-size: 30px;}
+@media (max-width: 768px) {
+.innovate hr {display: none!important;}
+	}

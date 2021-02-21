@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepiotics | Home</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="/deepiotics/js/index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+
+<header>
+        <!--Nav Bar Starts-->
+        <!--Nav For Mobile Starts-->
+        <nav class="navMobile">
+            <div style="z-index:1000;;"class="nav-links" id="mob-menu">
+            <div style="width:100%;"class="logo-container">
+                    <img src="logo.png" alt="" class="logo-container-img-nav">
+                </div>
+                    <div class="aboutusM"><a href="aboutus.html" class="nav-link">About Us</a></div>
+                    <div class="servicesM"> <a href="services.html" class="nav-link">Services</a>
+                    </div>
+                    <div class="soultionM"><a href="solution.html" class="nav-link">Solution</a></div>
+                    <div class="contactM"><a href="contact.php" class="nav-link">Contact Us</a></div>
+                    <div class="blogM"><a href="blog.html" class="nav-link">Blog</a></div>
+            </div>
+            <div class="nav">
+                <div class="logo" id="logo-container logo-container-mobile">
+                    <img style="width:125px;" id="logo-image-mobile" class="logo-container-image-mobile" src="logo.png" alt="logo">
+                </div>
+                <div  class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Nav For Mobile Ends-->
+        
+        <div class="navWrapper">
+            <ul class="mainList">
+                <li>
+                    <img src="logo.png" alt="logo" style="width:125px;" id="logo-image">
+                   
+                </li>
+                <li style="grid-area: about;" class="about">
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li  style="grid-area: services;"class="navServices">
+                    <a href="services.html">Services</a>
+                    <ul class="subListServices">
+                        <li class="aiesd">
+                            <img src="icons/aiLogo.svg" alt="">
+                            <a href="ai.html">Artificial Intelligence</a>
+                        </li>
+                        <li class="aiod">
+                            <img src="icons/machine-learning.svg" alt="">
+                            <a href="ml.html">Machine Learning</a>
+                        </li>
+                        <li class="nlp">
+                            <img src="icons/vision.svg" alt="">
+                            <a href="vision.html">Computer Vision</a>
+                        </li>
+                        <li class="ml">
+                            <img src="icons/iotLogo.svg" alt="">
+                            <a href="iot.html">Internet of things</a>
+                        </li>
+                        <li class="speech">
+                            <img src="icons/search.svg" alt="">
+                            <a href="research.html">Research & Development</a>
+                        </li>
+                        <li class="aic">
+                            <img src="icons/information.svg" alt="">
+                            <a href="testing.html">QA & Testing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li style="grid-area: solution;"class="solution">
+                    <a href="solution.html">Solution</a>
+                </li>
+                <li style="grid-area:case;"class="case">
+                    <a href="contact.php">Contact Us</a>
+                </li>
+                <li style="grid-area:blog;"class="blog">
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/JavaScript">
+                window.onscroll = function() {setOpacity()};
+                const logo = document.getElementById('logo-image');
+                const logoMobile = document.getElementById('logo-image-mobile');
+                function setOpacity() {
+                    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                        logo.style.opacity=1;
+                        logoMobile.style.opacity=1;
+                    } else {
+                        logo.style.opacity=0;
+                        logoMobile.style.opacity =0;
+                    }
+                }
+            </script>
+        <!--Nav Bar Ends-->
+    </header>
+    <script type="text/JavaScript">
+                    const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+
+            burger.addEventListener('click', () =>{
+                nav.classList.toggle('nav-active');
+
+                navLinks.forEach((link, index) => {
+                    if(link.style.animation){
+                        link.style.animation = ``;
+                    }
+                    else{
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`; 
+                    }
+                });
+                burger.classList.toggle('toggle');
+            });
+
+            
+            }
+
+            navSlide();</script>
+    <img class="landing-image" src="animation.png">
+
+    <main>
+        <div class="left-content">
+            <!--
+                <h1 id="heading"></h1>
+                <script>
+                    var i=0,text;
+                    text ="DEEPIOTICS";
+                    function typing()
+                    {
+                        
+                        if(i<text.length)
+                        {
+                            document.getElementById("heading").innerHTML+= text.charAt(i);
+                            i++;
+                            setTimeout(typing,100);
+                        }
+                    }
+                    typing();
+                </script>
+                <div class="para">
+                    <p>Leverage over a decade worth of experience of our team of professionals, 
+                        who stay abreast with the latest technologies to cater to your complex business 
+                        needs with utmost ease and simplicity. Our hard-headed research experts boast 
+                        innovative competency to assist enterprises of all scales in scaling further and 
+                        make an impact in their crowded industry space.</p>
+                </div>
+                -->
+            <img class="image-logo" src="icons/Logo_Deepiotics_White_PNG.png">
+            <br>
+            <div class="text-animation">
+                <h3 class="text-anim"></h3>
+                <script src="js/typed.js"></script>
+                <script type="text/JavaScript">
+                        var typed = new Typed('.text-anim', {
+                        strings: ['Automated Govt ID Verification', 'Prediction Model from Sensors data',
+                                'Voice Based Interactive Assessment Applications', 'Computer Vision app for Visually Impaired',
+                                'Crowd Counting', 'Automated License Number Plate Recognition', 'AI based Currency Detection',
+                                'ioT Based Application Development','QnA and Testing'],
+                        typeSpeed: 10,
+                        backSpeed:50,
+                        loop: true
+                    });
+                    </script>
+            </div>
+            <a href="covid19.html" class="btn btn-primary covid-btn" style="z-index:99 !important; cursor:pointer !important; 
+            position:absolute; background-color:white !important; "  >Covid-19</a>
+        </div>
+
+    </main>
+    <div id="particles-js"></div>
+    <script src="js/particles.min.js" type="text/JavaScript"></script>
+    <script src="js/app.js" type="text/JavaScript"></script>
+    <br>
+    <section class="services">
+        <div class="services-heading">
+            <h1>Our <span style="color:#081037; font-weight: 900;">Expertise</span></h1>
+            <div class="underline"></div>
+        </div>
+        <!--
+        <div class="services-para">
+            <p>Deepiotics is proud to have a cohort of experts, possessing the proficiency to translate any complex problem 
+                of the real-world. We are having team of skills in Artificial Intelligence & Machine Learning, Internet of Things, 
+                Computer Vision, Mobile Solutions with AI Component, Research & Development, Data Analytics.</p>
+        </div> -->
+        <div class="container-outer">
+            <div class="card-own card-services">
+                <img src="icons/aiLogo.svg" alt="artificialIntelligence" style="width:30%">
+                <div class="container-services">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Work with some of the most talented AI team.</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/machine-learning.svg" alt="machineLearning" style="width:30%">
+                <div class="container-services">
+                    <h3>Machine Learning</h3>
+                    <p>Develop, adopt and implement AI & ML solutions with us.</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/vision.svg" alt="computerVision" style="width:30%">
+                <div class="container-services">
+                    <h3>Computer Vision</h3>
+                    <p>Give eye and intelligence to your product with Computer Vision.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-outer">
+            <div class="card-own card-services">
+                <img src="icons/iotLogo.svg" alt="artificialIntelligence" style="width:30%">
+                <div class="container-services">
+                    <h3>Internet of things</h3>
+                    <p>Connect, Control and Manage devices for your home and workplace.</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/search.svg" alt="research-n-development" style="width:30%">
+                <div class="container-services">
+                    <h3>Research & Development</h3>
+                    <p>Our team of Data Scientist and Researchers experienced with both research and implementation.</p>
+                </div>
+            </div>
+            <div class="card-own card-services">
+                <img src="icons/information.svg" alt="computerVision" style="width:30%">
+                <div class="container-services">
+                    <h3>QA & Testing</h3>
+                    <p>Dedicated Testing team for your products, get all testing solutions under one roof.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Enterprise section start -->
+
+<section class="enterprise-section enterprise-responsive">
+    <div class="row m-sm-0">
+        <div class="col-sm-4 p-sm-0 eresponsive">
+            <div class="enterprise-block text-center">
+                <img src="icons/enterprise.svg" alt="enterprise">
+                <h3>Enterprise</h3>
+                <p>We help enterprises to redefine the scope of enterprises in various verticals in this ever-growing demand for mobile applications.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 p-sm-0">
+            <div class="enterprise-block text-center">
+                <img src="icons/research.svg" alt="startup">
+                <h3>Startups</h3>
+                <p>Keeping the cost and timeline constraints in mind we provide development services to convert startups ideas into reality.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 p-sm-0">
+            <div class="enterprise-block text-center">
+                <img src="icons/startup.svg" alt="research">
+                <h3>Research</h3>
+                <p>Do Innovation on your data and technology.  Your R& D with team of Ph.D.s.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Enterprise section end -->
+
+<!-- Hire section start -->
+
+<section class="hire-section padding-xlg bg-white">
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                       <div class="text-block">
+                           <h4 class="mb-3">Do you want to hire AI app developer for your project ?</h4>
+                           <p>Our skilled development team deliver customized and end to end solutions to tech-savvy client starting from conceptualization to deployment at cost-effective rates.</p>
+                           <a href="#" class="btn btn-primary btn-link mt-3">Get Started</a>
+                       </div>
+                   </div>   
+                   <div class="col-sm-7">
+                       <ul class="hire-icon-block hire-items">
+                           <li>
+                               <div class="icon-block">
+                                   <img src="icons/clock.svg" alt="part-hiring">
+                               </div>
+                               <h6>Part time Hiring</h6>
+                           </li>
+                           <li>
+                               <div class="icon-block">
+                                   <img src="icons/history.svg" alt="full-hiring">
+                               </div>
+                               <h6>Full time Hiring</h6>
+                           </li>
+                           <li>
+                               <div class="icon-block">
+                                   <img src="icons/hourglass.svg" alt="hourly-hiring">
+                               </div>
+                               <h6>Hourly Hiring</h6>
+                           </li>
+                       </ul>
+                   </div>
+            </div>
+    </div>    
+</section>
+<!-- Hire section end -->
+
+    <!---------------------------------------------------Why hire deepiotics----------------------------------------->
+
+    <section class="hire">
+        <div class="hire-heading">
+            <h2>Why <span
+                    style="color:#081037; font-family: 'Poppins', sans-serif; font-weight: 900; color: white;">Deepiotics</span>
+            </h2>
+            <div class="underline-hire"></div>
+        </div>
+        <div class="container-outer">
+            <div class="card-own hire-card">
+                <img src="icons/tick.svg" alt="artificialIntelligence" style="width:10%">
+                <div class="container-services hire-container">
+                    <h3>Industry Knowledge</h3>
+                    <p>More than 25+ projects in machine learning and one patent, our team members are vetted and
+                        experienced with
+                        diverse domain covering AI, IT and Statistics.
+                    </p>
+                </div>
+            </div>
+            <div class="card-own hire-card">
+                <img src="icons/tick.svg" alt="machineLearning" style="width:10%">
+                <div class="container-services hire-container">
+                    <h3>Faster and Better</h3>
+                    <p>We work around the clock for you, on every platform to hit your deadline, beat your competition
+                        and achieve customer satisfaction.</p>
+                </div>
+            </div>
+            <div class="card-own hire-card">
+                <img src="icons/tick.svg" alt="computerVision" style="width:10%">
+                <div class="container-services hire-container">
+                    <h3>Partners for success</h3>
+                    <p>Great businesses set the vision for a better future. The right innovation partner takes them
+                        there.
+                        Our Services turn your vision of the future into reality.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-outer">
+            <div class="card-own hire-card">
+                <img src="icons/tick.svg" alt="artificialIntelligence" style="width:10%">
+                <div class="container-services hire-container">
+                    <h3>Scalability</h3>
+                    <p>We provide you dedicated teams that can be deployed on long-term engagements or scaled up to
+                        cover
+                        the varied demands of your release schedules.</p>
+                </div>
+            </div>
+            <div class="card-own hire-card">
+                <img src="icons/tick.svg" alt="research-n-development" style="width:10%">
+                <div class="container-services hire-container">
+                    <h3>Proven quality</h3>
+                    <p>Quality is embedded in our process in every sprint, we use Agile practices, daily code reviews,
+                        transparent progress tracking, manual and automated testing.
+                    </p>
+                </div>
+            </div>
+            <div class="card-own hire-card">
+                <img src="icons/tick.svg" alt="computerVision" style="width:10%">
+                <div class="container-services hire-container">
+                    <h3>Passionate & Experienced</h3>
+                    <p>We are ridiculously passionate about innovation and have a pool of experts offering helping hand
+                        always.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------End of why hire deepiotics--------------------------------->
+
+    <section class="tools-stack">
+        <div class="tools-heading">
+            <h1><span style="font-family: 'Poppins', sans-serif; font-weight: 300;">Tools &</span> Tech-Stack</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="tab">
+            <button id="defaultOpen" class="tablinks" onclick="openTool(event, 'ai')">Machine Learning</button>
+            <button class="tablinks" onclick="openTool(event, 'data')">Data Science</button>
+            <button class="tablinks" onclick="openTool(event, 'deep')">Computer Vision</button>
+            <button class="tablinks" onclick="openTool(event, 'cloud')">Cloud</button>
+            <button class="tablinks" onclick="openTool(event, 'db')">Database</button>
+            <button class="tablinks" onclick="openTool(event, 'mobile')">Mobile</button>
+            <button class="tablinks" onclick="openTool(event, 'testing')">Testing</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="ai" class="tabcontent">
+            <div class="tools-ai">
+                <div class="logos-ai logos-ai-1">
+                    <img src="logos/scikit.png">
+                    <img src="logos/scipy.png">
+                    <img src="logos/pandas.jpeg">
+                    <img src="logos/pylogo.png">
+                    <img class="logo-r" src="logos/r.png">
+                </div>
+                <div class="logos-ai logos-ai-2">
+                    <img src="logos/matplotlib.svg">
+                    <img src="logos/numpy.png">
+                    <img src="logos/weka.jpg">
+                    <img src="logos/mlib.jpeg">
+                </div>
+            </div>
+        </div>
+
+        <div id="testing" class="tabcontent">
+            <div class="tools-ai-framework">
+                <div class="logos-framework logos-testing">
+                    <img src="logos/selenium.png">
+                    <img src="logos/appium.png">
+                    <img src="logos/restassured.png">
+                </div>
+                <div class="logos-framework logos-testing">
+                    <img src="logos/postman.png">
+                    <img src="logos/soapui.png">
+                    <img src="logos/jmeter.png" alt="jmeter">
+                </div>
+            </div>
+        </div>
+
+        <div id="data" class="tabcontent">
+            <div class="tools-data">
+                <div class="logos-data logos-database">
+                    <img src="logos/pandas.jpeg">
+                    <img src="logos/numpy.png">
+                    <img src="logos/nltk.png" alt="nltkLogo">
+                    <img src="logos/tableau.jpg">
+                    <img src="logos/matplotlib.svg">
+                </div>
+                <div class="logos-data logos-database">
+                    <img class="ggplot2" src="logos/ggplot2.png" style="width: 6%;">
+                    <img src="logos/plotly.png">
+                    <img class="logo-r" src="logos/r.png">
+                    <img src="logos/pylogo.png">
+                </div>
+            </div>
+        </div>
+        <div id="deep" class="tabcontent">
+            <div class="tools-deep">
+                <div class="logos-deep">
+                    <img class="opencv-image" src="logos/opencv.png">
+                    <img src="logos/keras.png">
+                    <img src="logos/tensorflow.png">
+                    <img src="logos/pytorch'.jpg" alt="">
+                    <img src="logos/tesseract.jpg" alt="tesseract">
+                </div>
+            </div>
+        </div>
+        <div id="cloud" class="tabcontent">
+            <div class="tools-cloud">
+                <div class="logos-cloud">
+                    <img src="logos/aws.png">
+                    <img src="logos/gcp.png" alt="GCPLogo">
+                </div>
+            </div>
+        </div>
+        <div id="db" class="tabcontent">
+            <div class="tools-languages">
+                <div class="logos-languages">
+                    <img src="logos/sqlserver.png" alt="sqlserver">
+                    <img src="logos/oracle.jpeg" alt="Oracle">
+                    <img src="logos/mysql.png" alt="mysql">
+                    <img src="logos/mongodb.png" alt="mongodb">
+                    <img src="logos/postgresql.png" alt="postgresql">
+                </div>
+            </div>
+        </div>
+        <div id="mobile" class="tabcontent">
+            <div class="tools-mobile">
+                <div class="logos-mobile">
+                    <img class="logo-android" src="logos/android.svg">
+                    <img src="logos/ios.jpg">
+                    <img src="logos/react.png">
+                </div>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+    </section>
+
+    <!------------------------------------------------------------------Contact Us Page Starts-->
+
+    <hr>
+    <div class="contactWrap">
+        <div class="contactWrap-heading">
+            <h2>Get in <span style="font-weight: 700;"> touch</span> with us</h2>
+            <div class="underline contact-line"></div>
+        </div>
+        <form  enctype="multipart/form-data" method="post" action="?">
+        <div class="contentWrap">
+            <div style="color: rgb(134, 130, 130);" class="reasonRadioBtn">
+                <p style="grid-area: reasonT;color:rgb(134, 130, 130);">Select reason</p>
+                <input style="grid-area:businessI;" type="radio" id="business" name="reason" onclick="JavaScript:closeResume();" value="Business Enquiry">
+                <label style="grid-area:businessT;" for="business"  >Business Enquiry</label>
+                <input style="grid-area:alliancesI;" type="radio" name="reason"  value="Allianices & Partnership" onclick="JavaScript:closeResume();" id="alliances">
+                <label style="grid-area:alliancesT;" for="alliances">Alliances & Partnership</label>
+                <input style="grid-area:careerI;" type="radio" name="reason" onclick="javascript:openResume();" value="Career Enquiry" id="career">
+                <label style="grid-area: careerT;" for="career">Career Enquiry</label>
+            </div>
+            <div style="color:rgb(134, 130, 130);" class="form">
+                <div style="grid-area:nameBox;" class="inputBox">
+                    <input type="text" name="name" required>
+                    <label for="name" class="label-name">
+                        <span class="content-name">Name*</span>
+                    </label>
+                </div>
+                <div style="grid-area:emailBox;" class="inputBox">
+                    <input type="text" name="email" required>
+                    <label for="email" type="email" class="label-name">
+                        <span class="content-name">E-Mail*</span>
+                    </label>
+                </div>
+                <div style="grid-area:contactBox;" class="inputBox">
+                    <input type="text" name="contact">
+                    <label for="contact" type="mobile" class="label-name">
+                        <span class="content-name">Contact Number</span>
+                    </label>
+                </div>
+                <div style="grid-area:descriptionBox;" class="inputBox">
+                    <input type="text" name="message">
+                    <label for="description" class="label-name">
+                        <span class="content-name">Description</span>
+                    </label>
+                </div>
+                <div style="grid-area:selectBox" id="selectBox" class="inputBox">
+                    <select name="department" id="department">
+                        <option value="IT">IT</option>
+                        <option value="Sales">Sales</option>
+                        <option value="HR">HR</option>
+                    </select>
+                    <label for="department" class="label-name">
+                        <span class="content-name">Department</span>
+                    </label>
+                </div>
+                <div style="grid-area:resumeBox" class="inputBox" id="resume">
+                    <input type="file" name="resume">
+                    <label for="resume" class="label-name">
+                        <span class="content-name">Upload Resume</span>
+                    </label>
+                </div>
+                <script type="text/JavaScript">
+                    var resume = document.getElementById('resume');
+                    var career = document.getElementById('career');
+                    window.onload = function() {
+                        resume.style.display = 'none';
+                    }
+                    function openResume(){
+                        if(career.checked){
+                            resume.style.display='block';
+                        }else{
+                            resume.style.display='none';
+                        }
+                    }
+                    function closeResume(){
+                        resume.style.display='none';
+                    }
+                </script>
+               
+                
+                <input style="grid-area:submitBtn;" value="Submit" type="submit" name="submit" class="btn btn-primary btn-link mt-3 btn-contact">
+                <div style="grid-area:captcha;"  class="g-recaptcha" data-sitekey="6LfqbOUUAAAAAKLiZCJhXVUTkwvRA9o3eW1JVnTY"></div>
+               
+                </form>
+                <div class="status">
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------Contact Us Page Ends-->
+
+
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7226733&style=0007&nbdigits=5&type=page&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
+</a>        
+
+    <!--------------------------------------------------------footer------------------------------------------------------------------------------>
+    <footer>
+        <div class="footer-services">
+            <div class="footer-heading">
+                <h3>Services</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Artificial Intelligence</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Machine Learning</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Computer Vision</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Internet of things</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Research & Development</h3>
+                    </a>
+                    <a href="#">
+                        <h3>QA & Testing</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-solutions">
+            <div class="footer-heading">
+                <h3>Solutions</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Automated Govt ID Verification</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Prediction Model from Sensors data</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Voice Based Interactive Assessment Applications</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Computer Vision app for Visually Impaired</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Crowd Counting</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Automated License Number Plate Recognition</h3>
+                    </a>
+                    <a href="#">
+                        <h3>AI based Currency Detection</h3>
+                    </a>
+                    <a href="#">
+                        <h3>IoT Based Application Development</h3>
+                    </a>
+                    <a href="#">
+                        <h3>QA and Testing</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-corporate">
+            <div class="footer-heading">
+                <h3>Corporate</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Partner with us</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Engagement Models</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Tech solutions for startups</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-about">
+            <div class="footer-heading">
+                <h3>About</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <a href="#">
+                        <h3>Our Story</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Teams</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Leadership</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-careers">
+            <div class="footer-heading">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="container-content">
+                <div class="line"></div>
+                <div class="footer-content">
+                    <h3>Address</h3>
+                    <p>A-88, Vaibhav Nagar, <br> Indore 452016 (MP), INDIA</p> 
+                    <h3>Email</h3>
+                    <p>info@deepiotics.com <br> contact@deepiotics.com <br>Cell:+91-98263-24365</p>
+                    <h3>Follow Us</h3>
+                    <div class="socialMedia">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/Deepiotics-104288471209108/?modal=admin_todo_tour" target="_blank"><img src="social/facebook.svg" alt="facebook"></a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/mwlite/company/deepiotics" target="_blank"><img src="social/linkedin.svg" alt="linkekdin"></a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://mobile.twitter.com/Deepioticspvt/status/1246034138240413701" target="_blank"><img  src="social/twitter.svg" alt="twitter"></a>
+                        </div>
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/deepioticsai/" target="_blank"><img  src="social/instagram.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------------------------------------------footer over---------------------------------------------------------------->
+
+
+</body>
+
+</html>

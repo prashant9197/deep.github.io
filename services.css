@@ -1,0 +1,363 @@
+.banner {
+  margin-top: 10vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.banner-heading {
+  width: 700px;
+  right: 5%;
+  position: relative;
+  align-content: left;
+}
+.typing-effect {
+  width: fit-content;
+  display: flex;
+}
+
+.typing-heading-mobile {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+.container-banner {
+  width: fit-content;
+}
+.text-anim {
+  font-style: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.Slides,
+.Slides-mobile {
+  display: none;
+  vertical-align: middle;
+}
+
+.slide-container {
+  max-width: 500px;
+  position: absolute;
+  margin: auto;
+  left: 60%;
+}
+
+.services-heading-banner {
+  width: 400px;
+}
+.services-heading-banner h5 {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: Helvetica, sans-serif;
+}
+
+.schedule {
+  width: auto;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: left;
+}
+.u-serv {
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+.slide-container-mobile {
+  display: none;
+  width: auto;
+  margin: auto;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.row p {
+  width: 70%;
+  text-align: center;
+  color: rgb(70, 70, 70);
+}
+.row {
+  margin: auto;
+  padding: 20px;
+}
+.services-para {
+  width: 70%;
+}
+.col-sm-6 {
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: fit-content !important;
+}
+.col-sm-6 h4,
+.col-sm-6 img {
+  width: fit-content;
+  margin: auto;
+}
+.cta-innovation {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  min-height: 10vh;
+}
+.services-innovation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.innovation-para {
+  width: fit-content;
+  font-size: 18px;
+  position: relative;
+  margin-top: auto;
+  padding-right: 5px;
+}
+
+.button-contactus {
+  position: relative;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.workflow-line {
+  height: 1160px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #0b2d79;
+  display: flex;
+  width: 10px;
+  left: 50%;
+}
+.workflow-arrow-right {
+  display: flex;
+}
+.workflow-arrow-left {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.workflow-arrow-left p {
+  margin: auto;
+}
+
+.workflow-button {
+  border-radius: 10px;
+  border-bottom: 3px solid #0b2d79;
+  padding: 10px;
+  background-color: white;
+  z-index: 20;
+  position: relative;
+}
+.content-right,
+.content-workflow-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+}
+.content-right p {
+  margin: auto;
+  text-align: left;
+}
+.content-workflow-left p {
+  text-align: right;
+}
+.line-right,
+.line-left {
+  width: 60px;
+  height: 10px;
+  background-color: #0b2d79;
+  border-radius: 0 5px 5px 0;
+}
+.line-left {
+  margin-left: 50px;
+  border-radius: 5px 0 0 5px;
+}
+.consultancy-services {
+  background-color: rgb(240, 240, 240);
+  padding-top: 20px;
+}
+.services {
+  margin-top: 0;
+  background-color: rgb(240, 240, 240);
+}
+.testimonials {
+  text-align: center;
+}
+.testimonials p {
+  text-align: left;
+  margin: auto;
+}
+.testimonials .col-md-3 h3 {
+  font-size: 22px;
+}
+@media screen and (max-width: 1100px) {
+  .banner {
+    margin-top: 15vh;
+  }
+  .typing-heading-normal {
+    font-size: 30px;
+  }
+  .slide-container {
+    padding-right: 10px;
+  }
+}
+.workflow-line {
+  height: 1100px;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  .banner-heading h1 {
+    font-size: 30px;
+    margin: auto;
+  }
+  .banner {
+    width: auto;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding-left: 10px;
+  }
+  .slide-container,
+  .Slides {
+    display: none;
+  }
+  .slide-container-mobile {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-left: 25px;
+  }
+  .services-heading-banner {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+  }
+  .typing-effect {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  .schedule {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .workflow-line {
+    height: 1400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .workflow-line {
+    height: 1600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .text-anim {
+    font-size: 30px;
+  }
+  .typing-effect {
+    margin-left: 20%;
+  }
+  .workflow-line {
+    height: 1400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner-heading {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .services-heading-banner {
+    width: 90%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .typing-effect {
+    margin-left: 60px;
+    padding-bottom: 15px;
+  }
+  .text-anim {
+    font-size: 20px;
+  }
+  .typing-heading-normal {
+    display: none;
+  }
+  .typing-heading-mobile {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    font-size: 22px;
+    justify-content: center;
+  }
+    .typing-heading-mobile b{
+        font-size: 22px;
+    }
+  .text-anim-mobile {
+    color: blue;
+    margin-top: 5vh;
+    font-size: 22px;
+  }
+  .slide-container-mobile {
+    padding-top: 25px;
+    margin-left: 5%;
+    padding-bottom: 10px;
+  }
+  .cta-innovation {
+    flex-direction: column;
+    text-align: center;
+  }
+  .innovation-para {
+    font-size: 15px;
+  }
+  .contactus-button {
+    margin-top: 0px;
+  }
+  .workflow-line {
+    left: 5%;
+    height: 1600px;
+  }
+
+  .workflow {
+    text-align: center;
+    margin: auto;
+  }
+  .workflow-para {
+    text-align: center;
+  }
+}

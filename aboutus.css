@@ -1,0 +1,215 @@
+
+.mainGrid{
+    display:grid;
+    margin-top:20px;
+    grid-row-gap: 10px;
+}
+.topContent{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+    color:black; 
+    text-align:center;
+    grid-row-gap: 40px;
+    padding:50px;
+}
+.topContent button,.culture button{
+    
+    border:2px solid white ;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.startupStart,.leadership{
+    display: grid;
+    text-align:center;
+    font-weight: 700;
+    font-size:medium;
+    align-items: center;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr;
+}
+.topContent h3, .culture h3{
+    color:black;
+}
+
+/*Teams Starts*/
+.team{
+    background-image: url(img/team.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width:100%;
+    background-attachment: fixed;    
+}
+.team .teamMember .moreInfo h5{
+    font-size:medium;
+}
+.team:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+/*
+.teamMember:hover h5{
+    opacity:0;
+    pointer-events: all;
+    transition-duration: 0.5s;
+}*/
+.teamMember:hover .ayan h5,.teamMember:hover .rahul h5,.teamMember:hover .bhawna h5,.teamMember:hover .tyler h5,.teamMember:hover .jared h5,.teamMember:hover .terence h5{
+    pointer-events: all;
+    opacity:1;
+}
+.teamMember h4{
+    position: relative;
+    text-align:center;
+    margin:10px;
+    color:white;
+}
+/*.teamMember h5{
+    display: contents;
+    color:white;
+}*/
+.teamMember h5 {
+    pointer-events: all;
+    color:white;
+}
+.team .teamMember .moreInfo h4{
+    font-size: medium;
+    text-align:left;
+}
+.team .teamMember .moreInfo{
+    text-align:left;
+    padding:10px;
+    margin-left:50px;
+}
+/*.teamSub .teamMember:hover {
+    position:relative;
+    background: rgba(0, 0, 0, 0.2);
+}*/
+.teamSub .teamMember {
+    transition:all 0.3s ease-in-out;
+    text-align: center;
+    pointer-events: all;
+}
+.teamSub .teamMember .icons{
+
+}
+.teamSub{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "ayan rahul bhawna"
+    ;
+}
+.teamSub img{
+    width:200px;
+    height: 200px;
+    clip-path: circle(100px);
+}
+.iconify {/*Icons*/
+    width:45px;
+    height:45px;
+    position: relative;
+    text-align:center;
+    color:white;
+} 
+.team .teamMember{
+    padding-top:30px;
+}
+/*Teams Ends*/
+.video{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    align-items: center;
+    justify-items: center;
+}
+.video h1 {
+    background-color: white;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+.culture{
+    display:grid;
+    grid-template-columns: repeat(1,auto);
+    grid-row-gap: 20px;
+    background-color: black;
+    color:white; 
+    text-align:center;
+    grid-row-gap: 40px;
+    padding:20px;
+}
+.culture ul{
+    list-style: square;
+}
+/*------------------------------------------------------------------------styling Ends Here*/
+@media screen and (max-width : 955px)
+{
+    .mainGrid .video {
+        padding:20px;
+    }
+
+}
+@media screen and (max-width : 752px){
+    .mainGrid .team .teamSub{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "ayan "
+        "rahul"
+        "bhawna"
+        ;
+        padding:30px;
+    }
+    .mainGrid .team .teamMember .moreInfo{
+        padding:100px;
+        padding-top:0;
+    }
+    .mainGrid .video {
+        display:grid;
+        grid-template-columns: 1fr;
+        padding:20px;
+        grid-row-gap: 20px;
+    }
+}
+@media screen and (max-width : 650px){
+    .mainGrid .topContent .startupStart{
+        display:grid;
+        grid-template-columns: 1fr;
+        font-size:medium;
+    }
+    .mainGrid .video iframe{
+        width:100%;
+    }
+    .mainGrid .team .teamSub{
+        padding:20px;
+    }
+    .mainGrid .team .teamMember .moreInfo{
+        padding:auto;
+        padding-top:0;
+    }
+    
+}
+@media screen and (max-width : 600px){
+    .mainGrid .team .teamMember .moreInfo{
+        padding:0;
+        padding-top:0;
+    }
+}
+@media screen and (max-width : 950px){
+    .mainGrid .topContent{
+        grid-template-columns:1fr;
+    }
+}
+@media screen and (max-width : 520px){
+    .mainGrid .topContent{
+        padding-left:5px;
+        padding-right: 5px;
+    }
+}

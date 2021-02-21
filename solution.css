@@ -1,0 +1,346 @@
+.automated-container,
+.npr-container,
+.medical-container,
+.cai-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+  margin-top: 5vh;
+}
+.npr,
+.cai {
+  background-color: rgb(245, 245, 245);
+}
+.npr,
+.cai,
+.medical {
+  padding-bottom: 20px;
+}
+
+.covid{
+  display: flex;
+  flex-direction: row;
+  height:auto;
+}
+
+.upper{
+  display: flex;
+  flex-direction: column;
+  padding-top:50px;
+  width:700px;
+
+}
+.img__wrap{
+  display: flex;
+  width:600px;
+  padding:10px;
+  margin-left:170px;
+}
+
+.img__wrap img{
+  width:500px; 
+  height: 500px;
+}
+
+.upper p{
+  display: flex;
+  margin-left:150px;
+  font-size: 15px;
+  font-family:"Roboto", sans-serif;
+  color:black;
+  padding-right:30px;
+  padding-top:13px;
+}
+
+.upper h3{
+  display: flex;
+  text-align: left;
+  margin-left:150px;
+  font-family:"Roboto", sans-serif;
+  padding-right:30px;
+  padding-top:5px;
+  padding-bottom: 10px;
+}
+
+.upper h1{
+  display: flex;
+  text-align: left;
+  font-family:"Roboto", sans-serif;
+  font-size:30px;
+  padding:10px;
+  padding-bottom:10px;
+  margin-left: 140px;
+}
+
+.covidconatiner{
+ 
+  display: flex !important;
+  flex-direction: row !important; 
+  justify-content: space-evenly;
+}
+
+.covidicon{
+  font-family:"Roboto", sans-serif ;
+  display:flex;
+  text-align: center;
+  padding-right:50px;
+  padding-left:50px;
+}
+
+
+.mybutton{
+  display: flex;
+}
+
+@media screen and (max-width: 720px) {
+
+  .covid{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .upper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  
+  }
+  .img__wrap {
+    display: flex;
+    width: 100%;
+    margin-left: 0px;
+}
+
+  .img__wrap img{
+    width:100%;
+    height:200%;
+  }
+
+  
+  .upper p{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-right:0px;
+    padding-top:10px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .upper h3{
+    display: block;
+    width:100%;
+    text-align: center;
+    margin-left:0%;
+    font-family:"Roboto", sans-serif;
+    padding-right:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  
+  .upper h1 {
+    display: block;
+    width:100%;
+    font-family:"Roboto", sans-serif;
+    text-align: center;
+    font-size:30px;
+    padding-top:30px;
+    padding-bottom:10px;
+    margin-left:0%;
+  }
+  
+  .covidconatiner{
+    display: flex !important;
+    flex-direction: column !important; 
+    justify-content: space-around;
+  }
+  .covidicon{
+    font-family:"Roboto", sans-serif ;
+    display:flex;
+    text-align: center;
+  }
+  .covidicon p{
+    padding-bottom:0px;
+  }
+
+}
+
+
+.automated-heading,
+.npr-heading,
+.medical-heading,
+.cai-heading {
+  text-align: center;
+  width: fit-content;
+  padding-top: 8vh;
+  margin: auto;
+}
+.icons-container-medical {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.automated-heading h1,
+.npr-heading h1,
+.medical-heading h1,
+.cai-heading h1 {
+  font-size: 30px;
+}
+.introduction-image-container img {
+  width: 90%;
+}
+.medical-image-container img {
+  width: 100%;
+}
+.cai-image-container img {
+  width: 100%;
+}
+.cai-image-container {
+  width: 100%;
+}
+.automated {
+  min-height: 90vh;
+  padding-bottom: 10px;
+}
+.first-col,
+.second-col,
+.third-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first-row,
+.second-row {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.first-row p,
+.second-row p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  width: 70%;
+}
+.first-row img,
+.second-row img {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+.description-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.upper-text {
+  text-align: center;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.automated-underline {
+  width: container;
+}
+.schedule-call {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.first-col p {
+  width: 70%;
+  margin: auto;
+}
+.introduction-image-container-mobile,
+.npr-image-container-mobile,
+.medical-image-container-mobile,
+.cai-image-container-mobile,
+.first-row-medical,
+.second-row-medical {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .automated-heading {
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .introduction-image-container,
+  .npr-image-container,
+  .medical-image-container,
+  .cai-image-container,
+  .first-col,
+  .second-col,
+  .third-col {
+    display: none;
+  }
+  .introduction-image-container-mobile,
+  .npr-image-container-mobile,
+  .medical-image-container-mobile,
+  .cai-image-container-mobile {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .first-row-medical,
+  .second-row-medical {
+    display: flex;
+    flex-direction: column;
+  }
+  .introduction-image-container-mobile img,
+  .npr-image-container-mobile img,
+  .medical-image-container-mobile img,
+  .cai-image-container-mobile img {
+    width: 70%;
+    margin: auto;
+  }
+  .automated-heading,
+  .npr-heading,
+  .medical-heading,
+  .cai-heading {
+    margin-bottom: -20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .first-row,
+  .second-row {
+    flex-direction: column;
+  }
+  .introduction_4,
+  .introduction_5,
+  .introduction_6,
+  .CoDeveloped,
+  .award {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px 0 3px 0;
+  }
+  .npr-image-container-mobile img {
+    width: 100%;
+  }
+  .upper-text {
+    width: auto;
+  }
+  h4 {
+    font-size: 17px !important;
+    width: auto;
+    margin: auto;
+  }
+  .icons-container-medical {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cai-image-container-mobile img {
+    width: 100%;
+  }
+}
