@@ -18,6 +18,10 @@
     color: #555;
   } */
   body{margin-top:20px;}
+  .team{
+    border-bottom: 2px solid #007bff;
+    text-align: center;
+  }
 .rs-team .team-item {
   position: relative;
   overflow: hidden;
